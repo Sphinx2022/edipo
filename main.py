@@ -1,5 +1,4 @@
-import csv
+from utils.tsv_parse import parse_tsv
 
-def parseTsv(tsv_path: str) -> list(str):
-    with open(tsv_path) as tsv_file:
-        return csv.reader(tsv_file, delimiter='\t')
+x, y, z = parse_tsv('./datasets/period.tsv')
+print(z)
