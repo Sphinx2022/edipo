@@ -1,4 +1,3 @@
-from utils.tsv_parse import parse_tsv
+from utils.data_augmentation import generate_random_simple
 
-x, y, z = parse_tsv('./datasets/period.tsv')
-print(z)
+generate_random_simple('./xxx.tsv')
